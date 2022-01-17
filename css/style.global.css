@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url(../assets/fonts/Comfortaa-VariableFont_wght.ttf);
+    font-style: normal;
+    font-weight: 300;
+}
+
+:root {
+    --font1: 24px;
+    --font2: 18px;
+    --font3: 20px;
+    --font4: 16px;
+    --font5: 14px;
+    --font6: 12px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: Comfortaa;
+}
+
+.main-body {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    background: transparent;
+}
+
+@media all and (min-width: 320px) and (max-width: 374px) {
+    :root {
+        --font2: 15px;
+        --font5: 12px;
+    }
+}
+
+
+@media all and (min-width: 414px) and (max-width: 567px) {
+    :root {
+        --font2: 18px;
+        --font5: 16px;
+    }
+}
+
+
+
+@media all and (min-width: 568px) {
+    :root {
+        --font2: 20px;
+        --font3: 28px;
+        --font4: 18px;
+        --font6: 14px;
+    }
+}
+
+@media all and (min-width: 768px) {
+    :root {
+        --font1: 48px;
+        --font2: 20px;
+        --font3: 28px;
+        --font4: 20px;
+        --font5: 18px;
+        --font6: 16px;
+    }
+}
+
+
+@media all and (min-width: 1024px) {
+    :root {
+        --font1: 48px;
+        --font2: 20px;
+        --font3: 28px;
+        --font4: 20px;
+        --font5: 20px;
+        --font6: 16px;
+    }
+}
+
+@media all and (min-width: 1024px) and (min-height: 1366px) {
+    :root {
+        --font5: 22px;
+    }
+}
+
+@media all and (min-width: 1366px) and (min-height: 1024px) {
+    :root {
+        --font5: 24px;
+    }
+}
+
+@media all and (min-width: 1500px) {
+    :root {
+        --font5: 28px;
+    }
+}

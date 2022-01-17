@@ -1,0 +1,101 @@
+@media all and (min-width: 1320px) {
+
+    .container {
+        padding: 0 60px;
+    }
+
+    .header-container {
+        height: 67px;
+        justify-content: flex-end;
+    }
+    
+    .menu-btn-container {
+        display: none;
+    }
+
+    .menu-container {
+        display: block;
+        top: 0;
+        height: 100%;
+        position: relative;
+    }
+
+    .menu-list {
+        flex-direction: row;
+        gap: 30px;
+        position: relative;
+        left: 0;
+        transform: none;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .menu-list-item {
+        width: 216px;
+    }
+
+    .menu-list-link {
+        display: block;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        color: #ffffff;
+        transition: 0.5s;
+    }
+
+    .menu-list-link:hover {
+        color: #E25822;
+        cursor: pointer;
+    }
+
+    .hero-section {
+        padding: 28vh 9% 0;
+    }
+
+    .hero-title {
+        margin-bottom: 0;
+        font-size: 4.8rem;
+        line-height: 75px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 1.8rem;
+        line-height: 40px;
+    }
+
+    .hero-lighthouse {
+        top: 45vh;
+        left: 77%;
+        opacity: 0;
+
+    }
+
+    .hero-baloon {
+        top: -6px;
+        opacity: 0;
+    }
+}
+
+@media all and (min-width: 1600px) {
+
+    .hero-lighthouse {
+        height: 506px;
+    }
+
+    .hero-baloon {
+        width: 405px;
+        height: 507px;
+    }
+
+}

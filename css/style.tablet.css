@@ -1,0 +1,150 @@
+@media all and (min-width: 768px) {
+    
+    .container {
+        padding: 0 76px;
+    }
+
+    .header-container {
+        height: 120px;
+        justify-content: space-between;
+    }
+
+
+    .logo-text {
+        display: block;
+    }
+
+    .logo-link {
+        order: -1;
+        display: flex;
+        width: 53%;
+        justify-content: space-between;
+        align-items: flex-end;
+        height: 60px;
+    }
+
+    .logo-text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 60px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+
+    .logo-mob {
+        width: 36px;
+        height: 60px;
+    }
+
+    .call-container {
+        margin-left: 130px;
+    }
+    
+    .menu-container {
+        top: 115px;
+    
+    }
+
+    .menu-list-link {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .hero-section {
+        padding: 25px 0 0;
+    }
+
+    .hero-title {
+        display: none;
+    }
+
+    .hero-subtitle {
+        display: block;
+        width: 230px;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: left;
+        margin: 0;
+        margin-bottom: 15vh;
+    }
+
+    .hero-description {
+        font-size: 28px;
+        line-height: 32px;
+        background: transparent;
+    }
+
+    .hero-baloon {
+        top: 400px;
+        left: 90px;
+        width: 280px;
+        height: 350px;
+        transition: 1.5s;
+    }
+
+    .hero-lighthouse {
+        top: 87px;
+        /* left: 800px; */
+        width: 345px;
+        height: 430px;
+        transition: 1.5s;
+    }
+}
+
+@media all and (min-width: 1024px)  {
+    
+    .call-container,
+    .logo-link {
+        display: none;
+    }
+
+    .header-container {
+        justify-content: flex-end;
+    }
+/* 
+    .menu-btn-container {
+        position: relative;
+        z-index: 1600;
+    } */
+
+    .hero-section {
+        margin: 0 auto;
+        padding: 95px 20px 0;
+        width: 80%;
+    }
+
+    .hero-title {
+        display: block;
+        font-size: 80px;
+        line-height: 89px;
+    }
+
+    .hero-subtitle {
+        text-align: center;
+        margin-bottom: 40px;
+        width: 100%;
+        font-size: 28px;
+        line-height: 31px;
+    }
+
+    .hero-pics {
+        position: absolute;
+        top: 0;
+    }
+
+    .hero-baloon {
+        /* top: -6px; */
+        top: 780px;
+        left: 5%;
+        width: 330px;
+        height: 420px;
+    }
+
+    .hero-lighthouse {
+        top: 300px;
+        /* left: 720px; */
+        /* left: 1030px; */
+    }
+    
+
+}
