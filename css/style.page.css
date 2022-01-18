@@ -512,7 +512,7 @@ section {
 
     .header-container {
         height: 80px;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
     .logo-link {
@@ -530,21 +530,31 @@ section {
 
     .menu-container {
         display: block;
+        justify-content: flex-end;
         position: relative;
         top: 0;
-        width: 100%;
+        width: 50%;
         height: auto;
+    }
+
+    .menu-item {
+        width: 20%;
     }
 
     .menu-list {
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
-        gap: 30px;
+        gap: 0;
         position: relative;
         left: 0;
         top: 0;
         transform: none;
         width: 100%;
+    }
+
+    .menu-list-item {
+        width: auto;
     }
 
     .menu-list-link {
