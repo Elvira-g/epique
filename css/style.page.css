@@ -1,16 +1,23 @@
+
+body {
+    position: relative;
+    min-height: 100vh;
+}
+
 .page-background {
     position: absolute;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     overflow: hidden;
 }
-
+/* 
 .page-background-container {
     position: relative;
     width: 100%;
-    height: 100%;
-}
+    min-height: 100%;
+    overflow: hidden;
+} */
 
 .page-background-image {
     position: absolute;
@@ -522,6 +529,13 @@ section {
 
     .logo-text {
         margin-right: 27px;
+        font-size: 50px;
+        line-height: 33px;
+    }
+
+    .logo-mob {
+        width: 30px;
+        height: 48px;
     }
 
     .call-container, .menu-btn-container {
@@ -562,12 +576,15 @@ section {
         left: 0;
         top: 0;
         transform: translate(0, 0);
+        font-size: 18px;
+        line-height: 20px;
         color: rgba(0, 0, 0, 0.3);
     }
 
     .active {
         color: rgba(0, 0, 0, 1);
     }
+
 }
 
 @media all and (min-width: 1500px) {
@@ -580,6 +597,21 @@ section {
 
     .header-container {
         height: 120px;
+    }
+
+    .logo-text {
+        font-size: 60px;
+        line-height: 40px;
+    }
+
+    .logo-mob {
+        width: 36px;
+        height: 60px;
+    }
+
+    .menu-list-link {
+        font-size: 24px;
+        line-height: 26px;
     }
 
     .about-section, section {

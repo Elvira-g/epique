@@ -113,8 +113,16 @@ button {
     }
 }
 
+@media all and (min-width: 1400px) {
+    :root {
+        --font2: 18px;
+        --font5: 18px;
+    }
+}
+
 @media all and (min-width: 1500px) {
     :root {
+        --font2: 28px;
         --font5: 28px;
     }
 }
