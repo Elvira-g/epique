@@ -15,7 +15,7 @@ window.addEventListener('load', function() {
 
     let startY;
     let dist;
-    let offset = baloon.offsetTop;
+    let offset = (baloon)? baloon.offsetTop : 0;
 
     function handleSwipe (isUpSwipe){
         if(isUpSwipe < 0){
