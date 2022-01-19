@@ -27,6 +27,15 @@ body {
     height: 320px;
 }
 
+#baloon {
+    top: 45%;
+    left: -20%;
+    width: 280px;
+    height: 380px;
+    transition: 1s;
+    /* position: fixed; */
+}
+
 .container {
     padding: 0 10px;
     box-sizing: border-box;
@@ -64,7 +73,7 @@ body {
     fill: #000000;
 }
 
-button {
+.menu-btn-container {
     display: block;
     width: 50px;
     height: 50px;
@@ -235,6 +244,46 @@ section {
     text-align: center;
     color: #000000;
 }
+
+.section-buttons-block {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.section-button {
+    font-family: Comfortaa;
+    font-weight: 300;
+    width: 30%;
+    min-height: 30px;
+    font-size: var(--font5);
+    line-height: 16px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 8px 0;
+    box-sizing: border-box;
+}
+
+.section-button:nth-child(3), .section-button:nth-child(6) {
+    width: 40%;
+}
+
+.section-button:nth-child(7), .section-button:nth-child(8) {
+    width: 50%;
+}
+
+.active-button {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 2px solid rgba(0, 0, 0, 1);
+}
+
+li {
+    margin-top: 15px;
+}
+
 
 @keyframes fire {
     0% {
