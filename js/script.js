@@ -11,9 +11,15 @@ let baloon = document.querySelector('.hero-baloon');
 let lighthouse = document.querySelector('.hero-lighthouse');
 let sea = document.querySelector('.hero-line ');
 let icon = document.querySelector('.hamburger');
+let video = document.querySelector('.background-video')
 
 window.addEventListener('load', function() {
     // document.querySelector('.hero-section').style.opacity = '1';
+
+    video.addEventListener('ended', function() {
+        video.play();
+    })
+
     if(window.screen.height < 768) {
         baloon.style.display = 'none';
         lighthouse.style.display = 'none';
