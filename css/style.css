@@ -1,4 +1,186 @@
+body {
+    background-color: #181818;
+}
 
+.header {
+    background-color: rgba(24, 24, 24, 0.8);
+}
+
+.call-button {
+    fill: #ffffff;
+}
+
+.hamburger .line{
+    background-color: #ffffff;
+}
+
+
+.menu-container {
+    background-color: rgba(226, 88, 34, 0);
+
+}
+
+.menu-list-link {
+    color: #ffffff;
+}
+
+.main-container {
+    padding: 0 31px;
+    box-sizing: border-box
+}
+
+.main-text-block {
+    margin: 0 auto;
+    margin-bottom: 7vh;
+    padding-top: 25vh;
+    box-sizing: border-box;
+}
+
+.main-title {
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.main-subtitle {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.main-text {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main-image-block {
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.main-fire {
+    /* fill: #E05A26;
+    opacity: 0.15; */
+}
+
+.main-fire-item {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -90%);
+    fill: #E05A26;
+    opacity: 0.15;
+}
+
+.main-fire-item:nth-child(1) {
+    width: 24px; 
+    height: 40px;
+    animation: main-fire-1 1.2s alternate ease-in-out infinite;
+}
+
+.main-fire-item:nth-child(2) {
+    width: 46px;
+    height: 68px;
+}
+
+.main-fire-item:nth-child(3) {
+    width: 58px;
+    height: 101px;
+}
+
+.main-fire-item:nth-child(4) {
+    width: 71px;
+    height: 111px;
+    animation: main-fire-4 3s alternate ease-in-out infinite;
+}
+
+.main-fire-item:nth-child(5) {
+    width: 86px;
+    height: 130px;
+    animation: main-fire-5 1.8s alternate ease-in-out infinite;
+}
+
+.main-fire-item:nth-child(6) {
+    width: 97px;
+    height: 150px;
+    animation: main-fire-6 2s alternate ease-in-out infinite;
+}
+
+.main-fire-item:nth-child(7) {
+    width: 108px;
+    height: 178px;
+    animation: main-fire-7 3s alternate ease-in-out infinite;
+}
+
+@keyframes main-fire-4 {
+    0% {
+        width: 71px;
+        height: 111px;
+    }
+
+    100% {
+        width: 90px;
+        height: 120px;
+
+    }
+}
+
+
+@keyframes main-fire-5 {
+    0% {
+        width: 86px;
+        height: 130px;
+    }
+
+    100% {
+        width: 105px;
+        height: 145px;
+
+    }
+}
+
+@keyframes main-fire-6 {
+    0% {
+        width: 97px;
+        height: 150px;
+    }
+
+    100% {
+        width: 110px;
+        height: 175px;
+
+    }
+}
+
+@keyframes main-fire-7 {
+    0% {
+        width: 108px;
+        height: 178px;
+    }
+
+    100% {
+        width: 130px;
+        height: 195px;
+
+    }
+}
+
+
+
+
+/* 
 .container {
     padding: 0 10px;
     box-sizing: border-box;
@@ -21,14 +203,9 @@
     position: fixed;
     top: 0;
     left: 0;
-    /* position: relative; */
 }
 
 .header-container {
-    /* position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -51,6 +228,11 @@ button {
     display: block;
     width: 50px;
     height: 50px;
+}
+
+.call-button {
+    fill: #ffffff;
+    width: 100%;
 }
 
 .menu-btn {
@@ -113,14 +295,12 @@ button {
 
 
 .menu-container {
-    /* display: block; */
     display: none;
     position: absolute;
     top: 80px;
     width: 100%;
     height: 100vh;
     left: 0;
-    /* left: 415px; */
     z-index: 990;
     background-color: rgba(225, 225, 225, 0);
     transition: 0.3s;
@@ -152,7 +332,7 @@ button {
     left: 50%;
     top: 45px;
     /* top: 50%; */
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%);
     font-style: normal;
     font-weight: 300;
     font-size: 22px;
@@ -168,7 +348,6 @@ button {
     width: 100%;
     height: 100vh;
     padding-top: 90px;
-    /* background-color: #000000; */
     box-sizing: border-box;
 }
 
@@ -176,7 +355,6 @@ button {
     text-align: center;
     padding: 50px 20px 0;
     box-sizing: border-box;
-    /* opacity: 0; */
     transition: 0.7s;
 }
 
@@ -220,8 +398,6 @@ button {
 
 .hero-baloon {
     position: absolute;
-    /* top: 300px; */
-    /* top: 735px; */
     top: 400px;
     left: 10px;
     fill: #ffffff;
@@ -235,10 +411,8 @@ button {
 
 .hero-lighthouse {
     position: absolute;
-    /* top: 411px; */
     top: 120px;
     left: 110%;
-    /* left: 192px; */
     fill: #ffffff;
     stroke: #ffffff;
     width: 184px;
@@ -256,7 +430,6 @@ button {
 .hero-line {
     position: absolute;
     right: 375px;
-    /* left: 0; */
     top: 652px;
     width: 375px;
     z-index: 5;
@@ -276,8 +449,7 @@ button {
 
     100% {
         transform: translateY(8px);
-        /* /* transform: translateY(7px); */
-        /* transform: translate(0, 0.5em); */
+
     }
 }
 
@@ -303,7 +475,9 @@ button {
     }
 
 
-}
+} */
+
+
 
 /* page */
 
