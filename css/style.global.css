@@ -12,6 +12,8 @@
     --font4: 16px;
     --font5: 14px;
     --font6: 12px;
+    --colorOrange: #E25822;
+    --colorBlack: #181818;
 }
 
 body {
@@ -26,9 +28,6 @@ body {
     overflow: hidden;
 }
 
-svg:not(:root) {
-    overflow: hidden;
-}
 
 h1,
 h2,
@@ -48,6 +47,7 @@ ul {
 }
 
 button {
+    font-family: Comfortaa;
     border: none;
     background: transparent;
 }
@@ -99,7 +99,7 @@ button {
 }
 
 .hamburger .line{
-    width: 50px;
+    width: 100%;
     height: 5px;
     display: block;
     margin: 8px auto;

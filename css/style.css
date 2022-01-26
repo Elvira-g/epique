@@ -1,5 +1,5 @@
 body {
-    background-color: #181818;
+    /* background-color: #181818; */
 }
 
 .header {
@@ -24,15 +24,26 @@ body {
     color: #ffffff;
 }
 
+.main {
+    height: 100vh;
+}
+
 .main-container {
-    padding: 0 31px;
+    padding: 0 5%;
     box-sizing: border-box
+}
+
+.hero-section {
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorBlack);
+    overflow: hidden;
 }
 
 .main-text-block {
     margin: 0 auto;
-    margin-bottom: 7vh;
-    padding-top: 25vh;
+    margin-bottom: 6vh;
+    padding-top: 23vh;
     box-sizing: border-box;
 }
 
@@ -123,6 +134,115 @@ body {
     height: 178px;
     animation: main-fire-7 3s alternate ease-in-out infinite;
 }
+
+section {
+    padding-top: 5vh;
+    box-sizing: border-box;
+}
+
+.section-title {
+    font-weight: 300;
+    font-size: var(--font1);
+    line-height: 27px;
+    text-align: center;
+    color: var(--colorBlack);
+}
+
+.section-title_white {
+    color: #ffffff;
+}
+
+.section-text {
+    margin-top: 2vh;
+}
+
+.section-text_white {
+    color: #ffffff;
+}
+
+.section-text_center {
+    margin: 0 auto;
+    margin-top: 3vh;
+    width: 80%;
+}
+
+.about-text-block {
+    position: relative;
+    text-align: center;
+    padding-bottom: 5vh;
+    box-sizing: border-box;
+}
+
+.about-svg-img {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    z-index: 0;
+}
+
+.about-numbers-block {
+    text-align: center;
+    background-color: var(--colorOrange);
+    padding: 5vh 0;
+
+    box-sizing: border-box;
+}
+
+.about-numbers {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 3vh;
+    color: #ffffff;
+}
+
+.about-number {
+    width: 35%;
+}
+
+.about-number-icon {
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.create-section {
+    position: relative;
+    text-align: center;
+    padding: 5vh 0;
+    box-sizing: border-box;
+}
+
+.create-svg {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    z-index: 0;
+}
+
+.section-btn {
+    margin-top: 4vh;
+}
+
+.section-btn-text {
+    font-size: 16px;
+    line-height: 18px;  
+}
+
+.section-btn-text_white {
+    color: #ffffff;
+}
+
+.promote-section {
+    text-align: center;
+    padding: 5vh 0;
+    box-sizing: border-box;
+    background-color: var(--colorOrange);
+}
+
+
+
 
 @keyframes main-fire-4 {
     0% {
