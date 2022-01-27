@@ -12,8 +12,8 @@
     --font4: 16px;
     --font5: 14px;
     --font6: 12px;
-    --colorOrange: #181818;
-    /* --colorOrange: #E25822; */
+    /* --colorOrange: #181818; */
+    --colorOrange: #E25822;
     --colorBlack: #181818;
 }
 
@@ -171,7 +171,7 @@ button {
     gap: 30px;
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 30%;
     transform: translate(-50%, -50%);
     width: 100%;
 }
