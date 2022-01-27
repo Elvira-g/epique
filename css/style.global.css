@@ -104,6 +104,7 @@ button {
     height: 5px;
     display: block;
     margin: 8px auto;
+    border-radius: 10px;
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -196,6 +197,11 @@ button {
     line-height: 28px;
     text-align: center;
     transition: 0.5s;
+}
+
+form input {
+    outline: transparent;
+    border: none;
 }
 
 

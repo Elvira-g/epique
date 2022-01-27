@@ -4,10 +4,12 @@ body {
 
 .header {
     background-color: rgba(24, 24, 24, 0.8);
+    transition: 0.3s;
 }
 
 .call-button {
     fill: #ffffff;
+    transition: 0.3s;
 }
 
 .hamburger .line{
@@ -144,7 +146,7 @@ body {
 }
 
 section {
-    padding-top: 5vh;
+    padding-top: 7vh;
     box-sizing: border-box;
 }
 
@@ -185,7 +187,7 @@ section {
 .about-text-block {
     position: relative;
     text-align: center;
-    padding-bottom: 5vh;
+    padding-bottom: 7vh;
     box-sizing: border-box;
 }
 
@@ -199,7 +201,7 @@ section {
 .about-numbers-block {
     text-align: center;
     background-color: var(--colorOrange);
-    padding: 5vh 0;
+    padding: 7vh 0;
 
     box-sizing: border-box;
 }
@@ -226,7 +228,7 @@ section {
 .create-section {
     position: relative;
     text-align: center;
-    padding: 5vh 0;
+    padding: 7vh 0;
     box-sizing: border-box;
 }
 
@@ -252,7 +254,7 @@ section {
 
 .promote-section {
     text-align: center;
-    padding: 5vh 0;
+    padding: 7vh 0;
     box-sizing: border-box;
     background-color: var(--colorOrange);
 }
