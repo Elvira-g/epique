@@ -18,35 +18,16 @@ window.addEventListener('load', function(){
             this.classList.remove('is-active');
             hideItems(hideBlock);
             document.body.style.overflow = "visible";
-            // fire.classList.remove('main-image-block-fixed');
-            // fire.style.position = 'fixed';
         } else {
             this.classList.add('is-active');
             openMenu(showBlock);
             document.body.style.overflow = "hidden";
-            // fire.classList.add('main-image-block-fixed');
         }
         
     })
 
     window.addEventListener('scroll', function() {
-        let top = window.scrollY;
-        let hiro = document.querySelector('.hero-section');
-        let offset = hiro.clientHeight;
-        if(top > offset) {
-            palm.style.fill = "var(--colorBlack)";
-            menuBlock.style.backgroundColor = "rgba(255, 255, 255, 0)";
-            menuLine.forEach(function(item) {
-                item.style.backgroundColor = "var(--colorBlack)";
-            })
-            
-        } else {
-            palm.style.fill = "#ffffff";
-            menuBlock.style.backgroundColor = "rgba(24, 24, 24, 0.5)"
-            menuLine.forEach(function(item) {
-                item.style.backgroundColor = "#ffffff";
-            })
-        }
+        scrollPalm();
     })
 
     sections.forEach(function(section) {
@@ -63,6 +44,26 @@ window.addEventListener('load', function(){
     })
 
 })
+
+function scrollPalm() {
+    let top = window.scrollY;
+    let hiro = document.querySelector('.hero-section');
+    let offset = hiro.clientHeight;
+    if(top > offset) {
+        palm.style.fill = "var(--colorBlack)";
+        menuBlock.style.backgroundColor = "rgba(255, 255, 255, 0)";
+        menuLine.forEach(function(item) {
+            item.style.backgroundColor = "var(--colorBlack)";
+        })
+            
+    } else {
+        palm.style.fill = "#ffffff";
+        menuBlock.style.backgroundColor = "rgba(24, 24, 24, 0.5)"
+        menuLine.forEach(function(item) {
+            item.style.backgroundColor = "#ffffff";
+        })
+    }
+}
 
 function openMenu (callback) {
     menuContainer.style.display = 'block';
