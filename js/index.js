@@ -9,6 +9,7 @@ const heroSection = document.querySelector('.hero-section');
 const palm = document.querySelector('.call-button');
 const menuBlock = document.querySelector('.header');
 const menuLine = document.querySelectorAll('.line');
+const sections = document.querySelectorAll('section');
 
 window.addEventListener('load', function(){
 
@@ -34,19 +35,33 @@ window.addEventListener('load', function(){
         let offset = hiro.clientHeight;
         if(top > offset) {
             palm.style.fill = "var(--colorBlack)";
-            menuBlock.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            menuBlock.style.backgroundColor = "rgba(255, 255, 255, 0)";
             menuLine.forEach(function(item) {
                 item.style.backgroundColor = "var(--colorBlack)";
             })
             
         } else {
             palm.style.fill = "#ffffff";
-            menuBlock.style.backgroundColor = "rgba(24, 24, 24, 0.8)"
+            menuBlock.style.backgroundColor = "rgba(24, 24, 24, 0.5)"
             menuLine.forEach(function(item) {
                 item.style.backgroundColor = "#ffffff";
             })
         }
     })
+
+    sections.forEach(function(section) {
+        if(section.classList.contains('hero-section')){
+            section.style.opacity = '1';
+        } else {
+            window.addEventListener('scroll', function () {
+                if(isPartiallyVisible(section)){
+                    section.style.opacity = '1';
+                }
+            })
+        }
+        
+    })
+
 })
 
 function openMenu (callback) {
@@ -80,3 +95,22 @@ function hideBlock (callback) {
 function closeMenu () {
     setTimeout(() => menuContainer.style.display = 'none', 600);
 }
+
+function isPartiallyVisible(el) {
+    let elementBoundary = el.getBoundingClientRect();
+ 
+    let top = elementBoundary.top;
+    let bottom = elementBoundary.bottom;
+    let height = elementBoundary.height;
+ 
+    return ((top + height >= 0) && (height + window.innerHeight >= bottom + (height/3)));
+}
+
+function isFullyVisible(el) {
+    let elementBoundary = el.getBoundingClientRect();
+   
+    let top = elementBoundary.top;
+    let bottom = elementBoundary.bottom;
+   
+    return ((top >= 0) && (bottom <= window.innerHeight));
+  }

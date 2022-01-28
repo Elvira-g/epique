@@ -3,19 +3,19 @@ body {
 }
 
 .header {
-    background-color: rgba(24, 24, 24, 0.8);
+    background-color: rgba(24, 24, 24, 0.5);
     transition: 0.3s;
 }
 
 .call-button {
     fill: #ffffff;
     transition: 0.3s;
+    animation: palm 4s alternate ease-in-out infinite;
 }
 
 .hamburger .line{
     background-color: #ffffff;
 }
-
 
 .menu-container {
     background-color: rgba(226, 88, 34, 0);
@@ -148,6 +148,8 @@ body {
 section {
     padding-top: 7vh;
     box-sizing: border-box;
+    opacity: 0;
+    transition: 1s;
 }
 
 .section-title {
@@ -429,6 +431,60 @@ section {
 
     }
 }
+
+
+@keyframes palm {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    7% {
+        transform: rotate(0deg);
+
+    }
+
+    14% {
+        transform: rotate(90deg);
+    }
+
+    17% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(0deg);
+
+    }
+
+}
+
+
+/* @keyframes palm {
+    0% {
+        transform: rotate(90deg);
+    }
+
+    25% {
+        transform: rotate(0deg);
+
+    }
+
+    50% {
+        transform: rotate(90deg);
+
+    }
+
+    75% {
+        transform: rotate(180deg);
+
+    }
+    
+    100% {
+        transform: rotate(90deg);
+
+    }
+} */
 
 
 
