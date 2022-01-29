@@ -251,13 +251,15 @@ section {
     text-align: center;
     padding: 10vh 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .create-svg {
     position: absolute;
     top: 30px;
-    right: 10px;
+    right: -10%;
     z-index: 0;
+    transform: scale(-1,1);
 }
 
 .section-btn {
@@ -299,6 +301,7 @@ section {
     height: 28px;
     background: rgba(24, 24, 24, 0.3);
     border: none;
+    outline: transparent;
     border-radius: 14px;
     color: rgba(24, 24, 24, 0.5);
     padding-left: 10px;
@@ -309,8 +312,8 @@ section {
     position: relative;
     width: 45%;
     height: 28px;
+    border: none;
     background: rgba(24, 24, 24, 0.3);
-    outline: 2px solid rgba(24, 24, 24, 0.3);
     color: rgba(24, 24, 24, 0.5);
     border-radius: 14px;
     box-sizing: border-box;
@@ -325,7 +328,6 @@ section {
 .checkbox-label-active {
     background: rgba(226, 88, 34, 0.4);
     color: #ffffff;
-    outline: 2px solid rgba(24, 24, 24, 0.3);
 }
 
 .checkbox-span {
@@ -479,6 +481,32 @@ section {
 
     }
 
+}
+
+
+@media (max-height: 668px) {
+
+    .main-text-block {
+        padding-top: 7vh;
+        margin-bottom: 3vh;
+    }
+
+    .main-title {
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+
+    .main-subtitle {
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 15px;
+    }
+
+    .main-text {
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 
 

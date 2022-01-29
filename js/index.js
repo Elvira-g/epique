@@ -33,8 +33,6 @@ window.addEventListener('load', function(){
         scrollPalm();
     })
 
-
-
     sections.forEach(function(section) {
         if(section.classList.contains('hero-section')){
             section.style.opacity = '1';
