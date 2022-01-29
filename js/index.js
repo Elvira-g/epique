@@ -37,12 +37,11 @@ window.addEventListener('load', function(){
 
     sections.forEach(function(section) {
         if(section.classList.contains('hero-section')){
-            section.querySelector('.main-container').style.opacity = '1';
-            section.style.backgroundColor = 'var(--colorBlack)';
+            section.style.opacity = '1';
         } else {
             window.addEventListener('scroll', function () {
                 if(isPartiallyVisible(section)){
-                    section.querySelector('.main-container').style.opacity = '1';
+                    section.style.opacity = '1';
                 }
                 if(isJustVisible(baloonSection)){
                     showBaloon(baloonSection);

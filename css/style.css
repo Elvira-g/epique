@@ -35,8 +35,6 @@ body {
     z-index: 100;
     padding: 0 5%;
     box-sizing: border-box;
-    opacity: 0;
-    transition: 1s;
 }
 
 .hero-section {
@@ -154,6 +152,7 @@ body {
 section {
     padding-top: 10vh;
     box-sizing: border-box;
+    opacity: 0;
     transition: 1s;
 }
 
