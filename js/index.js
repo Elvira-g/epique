@@ -115,7 +115,7 @@ function isPartiallyVisible(el) {
     let bottom = elementBoundary.bottom;
     let height = elementBoundary.height;
  
-    return ((top + height >= 0) && (height + window.innerHeight >= bottom + (height/3)));
+    return ((top + height >= 0) && (height + window.innerHeight >= bottom + (height/5)));
 }
 
 function isJustVisible(el) {
