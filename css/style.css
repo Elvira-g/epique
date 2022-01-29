@@ -35,6 +35,8 @@ body {
     z-index: 100;
     padding: 0 5%;
     box-sizing: border-box;
+    opacity: 0;
+    transition: 1s;
 }
 
 .hero-section {
@@ -42,6 +44,8 @@ body {
     height: 100%;
     background-color: var(--colorBlack);
     overflow: hidden;
+    position: relative;
+    z-index: 200;
 }
 
 .main-text-block {
@@ -150,7 +154,6 @@ body {
 section {
     padding-top: 10vh;
     box-sizing: border-box;
-    opacity: 0;
     transition: 1s;
 }
 
@@ -201,16 +204,27 @@ section {
 
 .about-svg-img {
     position: absolute;
-    top: 30px;
-    left: 10px;
+    top: 100%;
+    left: -20%;
     z-index: 0;
+    width: 170px;
+    height: 290px;
+}
+
+.orange-section {
+    background-color: var(--colorOrange);
+    transition: 3s;
+}
+
+.numbers-section {
+    margin-top: 10vh;
+    padding-top: 10vh;
+
 }
 
 .about-numbers-block {
     text-align: center;
-    background-color: var(--colorOrange);
-    padding: 10vh 0;
-
+    padding: 0 0 10vh 0;
     box-sizing: border-box;
 }
 
@@ -264,7 +278,6 @@ section {
     text-align: center;
     padding: 10vh 0;
     box-sizing: border-box;
-    background-color: var(--colorOrange);
 }
 
 .section-text-block {
@@ -468,6 +481,7 @@ section {
     }
 
 }
+
 
 
 /* @keyframes palm {

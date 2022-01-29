@@ -10,6 +10,9 @@ const palm = document.querySelector('.call-button');
 const menuBlock = document.querySelector('.header');
 const menuLine = document.querySelectorAll('.line');
 const sections = document.querySelectorAll('section');
+const baloonSection = document.querySelector('.about-text-block');
+const baloon = document.querySelector('.about-svg-img');
+
 
 window.addEventListener('load', function(){
 
@@ -30,18 +33,26 @@ window.addEventListener('load', function(){
         scrollPalm();
     })
 
+
+
     sections.forEach(function(section) {
         if(section.classList.contains('hero-section')){
-            section.style.opacity = '1';
+            section.querySelector('.main-container').style.opacity = '1';
+            section.style.backgroundColor = 'var(--colorBlack)';
         } else {
             window.addEventListener('scroll', function () {
                 if(isPartiallyVisible(section)){
-                    section.style.opacity = '1';
+                    section.querySelector('.main-container').style.opacity = '1';
                 }
+                if(isJustVisible(baloonSection)){
+                    showBaloon(baloonSection);
+                }
+                
             })
         }
-        
     })
+
+    
 
 })
 
@@ -107,6 +118,16 @@ function isPartiallyVisible(el) {
     return ((top + height >= 0) && (height + window.innerHeight >= bottom + (height/3)));
 }
 
+function isJustVisible(el) {
+    let elementBoundary = el.getBoundingClientRect();
+ 
+    let top = elementBoundary.top;
+    let bottom = elementBoundary.bottom;
+    let height = elementBoundary.height;
+ 
+    return ((top + height >= 0) && (height + window.innerHeight >= bottom + (height)));
+}
+
 function isFullyVisible(el) {
     let elementBoundary = el.getBoundingClientRect();
    
@@ -114,4 +135,15 @@ function isFullyVisible(el) {
     let bottom = elementBoundary.bottom;
    
     return ((top >= 0) && (bottom <= window.innerHeight));
-  }
+}
+
+function showBaloon (section) {
+    let elementBoundary;
+    let top;
+    window.addEventListener('scroll', function (){
+        elementBoundary = section.getBoundingClientRect();
+        top = elementBoundary.top;
+        let yPos = top;
+        baloon.style.top = yPos + 'px';
+    })
+}
