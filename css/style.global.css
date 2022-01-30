@@ -13,8 +13,12 @@
     --font5: 14px;
     --font6: 12px;
     /* --colorOrange: #181818; */
-    --colorOrange: #E25822;
+    /* --colorOrange: #E25822; */
     --colorBlack: #181818;
+    --colorOrange: #26BFDC;
+    --colorGrey: #9b9b9b;
+
+    ;
 }
 
 body {
@@ -63,10 +67,14 @@ button {
 
 .header-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 80px;
     z-index: 1000;
+}
+
+.logo-link {
+    opacity: 0;
 }
 
 .logo-text {
@@ -74,10 +82,11 @@ button {
 }
 
 .logo-mob {
-    width: 45px;
-    height: 45px;
-    fill:#E25822;
-    animation: fire 3.5s alternate ease-in-out infinite;
+    width: 65px;
+    height: 65px;
+    transition: 0.3s;
+    /* fill:#E25822;
+    animation: fire 3.5s alternate ease-in-out infinite; */
 }
 
 .call-container {
@@ -191,7 +200,7 @@ button {
     width: 100%;
     position: absolute;
     left: 50%;
-    top: 45px;
+    top: 120%;
     transform: translate(-50%, -50%);
     font-style: normal;
     font-weight: 300;
@@ -213,6 +222,7 @@ form input {
         --font2: 15px;
         --font5: 12px;
     }
+
 }
 
 

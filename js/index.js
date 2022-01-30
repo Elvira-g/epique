@@ -2,6 +2,7 @@
 
 const menuBtn = document.querySelector('.menu-btn-container');
 const menuContainer = document.querySelector('.menu-container');
+const logo = document.querySelector('.logo-link');
 const icon = document.querySelector('.hamburger');
 const menuListLink = document.querySelectorAll('.menu-list-link');
 const fire = document.querySelector('.main-image-block');
@@ -19,10 +20,20 @@ window.addEventListener('load', function(){
     icon.addEventListener('click', function () {
         if(this.classList.contains('is-active')){
             this.classList.remove('is-active');
+            if(palm.classList.contains('black')){
+                menuBlock.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+            } else {
+                menuBlock.style.backgroundColor = 'rgba(24, 24, 24, 0.5)';
+            }
             hideItems(hideBlock);
             document.body.style.overflow = "visible";
         } else {
             this.classList.add('is-active');
+            if(palm.classList.contains('black')){
+                menuBlock.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+            } else {
+                menuBlock.style.backgroundColor = 'rgba(24, 24, 24, 1)';
+            }
             openMenu(showBlock);
             document.body.style.overflow = "hidden";
         }
@@ -49,8 +60,6 @@ window.addEventListener('load', function(){
         }
     })
 
-    
-
 })
 
 function scrollPalm() {
@@ -59,6 +68,8 @@ function scrollPalm() {
     let offset = hiro.clientHeight;
     if(top > offset) {
         palm.style.fill = "var(--colorBlack)";
+        palm.classList.add('black');
+        logo.style.opacity = '1';
         menuBlock.style.backgroundColor = "rgba(255, 255, 255, 0)";
         menuLine.forEach(function(item) {
             item.style.backgroundColor = "var(--colorBlack)";
@@ -66,7 +77,9 @@ function scrollPalm() {
             
     } else {
         palm.style.fill = "#ffffff";
-        menuBlock.style.backgroundColor = "rgba(24, 24, 24, 0.5)"
+        palm.classList.remove('black');
+        logo.style.opacity = '0';
+        menuBlock.style.backgroundColor = "rgba(24, 24, 24, 0)"
         menuLine.forEach(function(item) {
             item.style.backgroundColor = "#ffffff";
         })
@@ -91,7 +104,7 @@ function showItems () {
 
 function hideItems (callback) {
     for(let item of menuListLink) {
-        item.style.top = '45px';
+        item.style.top = '120%';
     }
     callback(closeMenu);
 }

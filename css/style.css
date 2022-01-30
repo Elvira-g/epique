@@ -3,7 +3,9 @@ body {
 }
 
 .header {
-    background-color: rgba(24, 24, 24, 0.5);
+    padding: 2% 3% 0;
+    box-sizing: border-box;
+    background-color: rgba(24, 24, 24, 0);
     transition: 0.3s;
 }
 
@@ -105,7 +107,7 @@ body {
     left: 50%;
     top: 90%;
     transform: translate(-50%, -90%);
-    fill: #E05A26;
+    fill: rgb(38, 191, 220);
     opacity: 0.15;
 }
 
@@ -175,6 +177,7 @@ section {
 
 .section-text {
     margin-top: 2vh;
+    font-size: var(--font5);
 }
 
 .section-text_white {
@@ -211,7 +214,7 @@ section {
 }
 
 .orange-section {
-    background-color: var(--colorOrange);
+    background-color: var(--colorGrey);
     transition: 3s;
 }
 
@@ -246,6 +249,10 @@ section {
     line-height: 45px;
 }
 
+.about-number-text {
+    font-size: var(--font4);
+}
+
 .create-section {
     position: relative;
     text-align: center;
@@ -260,6 +267,8 @@ section {
     right: -10%;
     z-index: 0;
     transform: scale(-1,1);
+    width: 128px;
+    height: 268px;
 }
 
 .section-btn {
@@ -326,7 +335,7 @@ section {
 }
 
 .checkbox-label-active {
-    background: rgba(226, 88, 34, 0.4);
+    background: rgba(38, 191, 220, 0.4);
     color: #ffffff;
 }
 
@@ -412,7 +421,6 @@ section {
     }
 }
 
-
 @keyframes main-fire-5 {
     0% {
         width: 86px;
@@ -483,6 +491,37 @@ section {
 
 }
 
+@media (max-width: 321px) {
+
+    .main-text-block {
+        margin-bottom: 3vh;
+        padding-top: 6vh;
+    }
+
+    .main-subtitle {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .main-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .about-numbers {
+        gap: 40px;
+ 
+    }
+}
+
+@media (max-width: 569px) and (max-height: 321px) {
+
+    .menu-list {
+        gap: 12px;
+    }
+}
+
 
 @media (max-height: 668px) {
 
@@ -508,6 +547,30 @@ section {
         line-height: 20px;
     }
 }
+
+@media (max-height: 415px) {
+
+    .main-image-block {
+        display: none;
+    }
+
+    .about-svg-img {
+        left: -10%;
+    }
+
+    .create-section, .promote-section {
+        padding: 20vh 0;
+    }
+
+    .main-text-block {
+        padding-top: 15vh;
+    }
+
+    .create-svg {
+        right: 0;
+    }
+}
+
 
 
 
