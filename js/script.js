@@ -97,7 +97,7 @@ window.addEventListener('load', function() {
     }
 
     function hideBlock (callback) {
-        setTimeout(() => menu.style.backgroundColor = 'rgba(225, 225, 225, 0)', 300);
+        setTimeout(() => menu.style.backgroundColor = 'rgba(225, 225, 225, 0.35)', 300);
         callback();
     }
 
