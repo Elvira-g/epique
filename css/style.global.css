@@ -16,7 +16,10 @@
     /* --colorOrange: #E25822; */
     --colorBlack: #181818;
     --colorOrange: #26BFDC;
-    --colorGrey: #9b9b9b;
+    --colorGrey: #26BFDC;
+
+    ;
+    /* --colorGrey: #9b9b9b; */
 
     ;
 }
@@ -69,7 +72,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 60px;
     z-index: 1000;
 }
 
@@ -168,7 +171,7 @@ button {
 .menu-container {
     display: none;
     position: absolute;
-    top: 80px;
+    top: 60px;
     width: 100%;
     height: 100vh;
     left: 0;

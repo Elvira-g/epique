@@ -3,6 +3,13 @@ body {
 }
 
 .header {
+    padding: 0 3%;
+    box-sizing: border-box;
+    background-color: rgba(24, 24, 24, 0);
+    transition: 0.3s;
+}
+
+.page-header {
     padding: 2% 3% 0;
     box-sizing: border-box;
     background-color: rgba(24, 24, 24, 0);
