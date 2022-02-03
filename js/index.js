@@ -11,7 +11,7 @@ const palm = document.querySelector('.call-button');
 const menuBlock = document.querySelector('.header');
 const menuLine = document.querySelectorAll('.line');
 const sections = document.querySelectorAll('section');
-const baloonSection = document.querySelector('.about-text-block');
+const baloonSection = document.querySelector('.about-section');
 const baloon = document.querySelector('.about-svg-img');
 
 
@@ -51,14 +51,15 @@ window.addEventListener('load', function(){
             window.addEventListener('scroll', function () {
                 if(isPartiallyVisible(section)){
                     section.style.opacity = '1';
-                }
-                if(isJustVisible(baloonSection)){
-                    showBaloon(baloonSection);
+                    if(isJustVisible(baloonSection)){
+                        showBaloon(baloonSection);
+                    }
                 }
                 
             })
         }
     })
+
 
 })
 
@@ -135,7 +136,7 @@ function isJustVisible(el) {
     let bottom = elementBoundary.bottom;
     let height = elementBoundary.height;
  
-    return ((top + height >= 0) && (height + window.innerHeight >= bottom + (height)));
+    return ((top + height >= 0) && (height + window.innerHeight >= bottom));
 }
 
 function isFullyVisible(el) {
@@ -148,12 +149,9 @@ function isFullyVisible(el) {
 }
 
 function showBaloon (section) {
-    let elementBoundary;
-    let top;
-    window.addEventListener('scroll', function (){
-        elementBoundary = section.getBoundingClientRect();
-        top = elementBoundary.top;
-        let yPos = top;
-        baloon.style.top = yPos + 'px';
-    })
+    let elementBoundary = section.getBoundingClientRect();
+    let top = elementBoundary.top;
+    let height = elementBoundary.height/2;
+    let yPos = top - height;
+    baloon.style.top = yPos + 'px';
 }

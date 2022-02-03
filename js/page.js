@@ -44,7 +44,7 @@ function scrollPalm() {
         palm.style.fill = "var(--colorBlack)";
         palm.classList.add('black');
         logo.style.opacity = '1';
-        menuBlock.style.backgroundColor = "rgba(255, 255, 255, 0)";
+        menuBlock.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
         menuLine.forEach(function(item) {
             item.style.backgroundColor = "var(--colorBlack)";
         })

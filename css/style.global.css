@@ -1,8 +1,36 @@
 @font-face {
     font-family: Comfortaa;
-    src: url(../assets/fonts/Comfortaa-VariableFont_wght.ttf);
+    src: url(../assets/fonts/Comfortaa-Light.ttf);
     font-style: normal;
     font-weight: 300;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../assets/fonts/Comfortaa-Regular.ttf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../assets/fonts/Comfortaa-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../assets/fonts/Comfortaa-SemiBold.ttf);
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Comfortaa;
+    src: url(../assets/fonts/Comfortaa-Bold.ttf);
+    font-style: normal;
+    font-weight: 700;
 }
 
 :root {
@@ -206,7 +234,7 @@ button {
     top: 120%;
     transform: translate(-50%, -50%);
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 22px;
     line-height: 28px;
     text-align: center;
@@ -218,80 +246,70 @@ form input {
     border: none;
 }
 
-
-
-@media all and (min-width: 320px) and (max-width: 374px) {
+/* for 5/SE portrait */
+@media all and (max-width: 320px) {
+   
     :root {
-        --font2: 15px;
-        --font5: 12px;
+        --font1: 24px;
+        --font4: 16px;
+        --font5: 14px;
     }
-
 }
 
-
-@media all and (min-width: 414px) and (max-width: 567px) {
+@media all and (min-width: 389px) and (max-width: 415px){
     :root {
-        --font2: 18px;
+        --font1: 32px;
+        --font4: 18px;
         --font5: 16px;
     }
 }
 
-
-
-@media all and (min-width: 568px) {
-    :root {
-        --font2: 20px;
-        --font3: 28px;
-        --font4: 18px;
-        --font6: 14px;
-    }
-}
-
-@media all and (min-width: 768px) {
+@media all and (min-width: 767px) and (max-width: 991px) {
     :root {
         --font1: 48px;
-        --font2: 20px;
-        --font3: 28px;
-        --font4: 20px;
-        --font5: 18px;
-        --font6: 16px;
-    }
-}
-
-
-@media all and (min-width: 1024px) {
-    :root {
-        --font1: 48px;
-        --font2: 20px;
-        --font3: 28px;
-        --font4: 20px;
+        --font4: 22px;
         --font5: 20px;
-        --font6: 16px;
     }
 }
 
-@media all and (min-width: 1024px) and (min-height: 1366px) {
+@media all and (min-width: 992px) and (max-width: 1199px) {
     :root {
-        --font5: 22px;
-    }
-}
-
-@media all and (min-width: 1366px) and (min-height: 1024px) {
-    :root {
+        --font1: 48px;
+        --font4: 26px;
         --font5: 24px;
     }
 }
 
-@media all and (min-width: 1400px) {
+@media all and (orientation: landscape) {
     :root {
-        --font2: 18px;
+        --font1: 40px;
+        --font4: 22px;
+        --font5: 20px;
+    }
+}
+
+@media all and (orientation: landscape) and (max-height: 361px) {
+    :root {
+        --font1: 34px;
+        --font4: 20px;
         --font5: 18px;
     }
 }
 
-@media all and (min-width: 1500px) {
+@media all and (min-width: 1200px) and (max-width: 1367px) {
     :root {
-        --font2: 28px;
-        --font5: 28px;
+        --font1: 48px;
+        --font4: 24px;
+        --font5: 22px;
     }
 }
+
+@media all and (min-width: 1591px) {
+    :root {
+        --font1: 48px;
+        --font4: 26px;
+        --font5: 24px;
+    }
+}
+
+
