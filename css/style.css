@@ -55,7 +55,7 @@
 .main-text-block {
     margin: 0 auto;
     margin-bottom: 6vh;
-    padding-top: 10vh;
+    padding-top: 6vh;
     box-sizing: border-box;
 }
 
@@ -545,7 +545,7 @@ section {
     
     .main-text-block {
         margin-bottom: 0;
-        padding-top: 4vh;
+        padding-top: 2vh;
     }
 
     .main-title {
