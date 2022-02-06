@@ -74,7 +74,7 @@
     line-height: 25px;
     text-align: center;
     color: #FFFFFF;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .main-text {
@@ -426,8 +426,8 @@ section {
     }
 
     100% {
-        width: 90px;
-        height: 120px;
+        width: 91px;
+        height: 121px;
 
     }
 }
@@ -439,7 +439,7 @@ section {
     }
 
     100% {
-        width: 105px;
+        width: 106px;
         height: 145px;
 
     }
@@ -1532,14 +1532,14 @@ section {
     }
 
     .main-fire-item:nth-child(1) {
-        width: 94px; 
-        height: 110px;
-        animation: main-fire-1 1.2s alternate ease-in-out infinite;
+        width: 74px; 
+        height: 90px;
+        animation: main-fire-1 4s alternate ease-in-out infinite;
     }
     
     .main-fire-item:nth-child(2) {
-        width: 116px;
-        height: 138px;
+        width: 114px;
+        height: 134px;
     }
     
     .main-fire-item:nth-child(3) {
@@ -1571,6 +1571,30 @@ section {
         animation: main-fire-7 3s alternate ease-in-out infinite;
     }
 
+
+    @keyframes main-fire-1 {
+        0% {
+            width: 74px;
+            height: 90px;
+        }
+    
+        100% {
+            width: 78px;
+            height: 94px;
+        }
+    }
+
+    @keyframes main-fire-2 {
+        0% {
+            width: 114px;
+            height: 134px;
+        }
+    
+        100% {
+            width: 120px;
+            height: 142px;
+        }
+    }
 
     @keyframes main-fire-4 {
         0% {
@@ -1698,8 +1722,8 @@ section {
     }
     
     .main-fire-item:nth-child(2) {
-        width: 116px;
-        height: 138px;
+        width: 114px;
+        height: 134px;
     }
     
     .main-fire-item:nth-child(3) {
@@ -1731,6 +1755,30 @@ section {
         animation: main-fire-7 3s alternate ease-in-out infinite;
     }
 
+
+    @keyframes main-fire-1 {
+        0% {
+            width: 74px;
+            height: 90px;
+        }
+    
+        100% {
+            width: 78px;
+            height: 94px;
+        }
+    }
+
+    @keyframes main-fire-2 {
+        0% {
+            width: 114px;
+            height: 134px;
+        }
+    
+        100% {
+            width: 120px;
+            height: 142px;
+        }
+    }
 
     @keyframes main-fire-4 {
         0% {
