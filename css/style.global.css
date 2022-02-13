@@ -108,6 +108,10 @@ button {
     opacity: 0;
 }
 
+.logo-link:visited {
+    color: var(--colorBlack);
+}
+
 .logo-text {
     display: none;
 }
@@ -307,8 +311,8 @@ form input {
 @media all and (min-width: 1591px) {
     :root {
         --font1: 48px;
-        --font4: 26px;
-        --font5: 24px;
+        --font4: 24px;
+        --font5: 22px;
     }
 }
 

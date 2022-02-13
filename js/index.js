@@ -14,35 +14,73 @@ const sections = document.querySelectorAll('section');
 const baloonSection = document.querySelector('.about-section');
 const baloon = document.querySelector('.about-svg-img');
 
+const menuHeight = menuBlock.clientHeight;
 
 window.addEventListener('load', function(){
 
-    icon.addEventListener('click', function () {
-        if(this.classList.contains('is-active')){
-            this.classList.remove('is-active');
-            if(palm.classList.contains('black')){
-                menuBlock.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+    if (window.screen.width >= 1368) {
+        menuContainer.style.opacity = '0';
+        logo.style.opacity = '0';
+        window.addEventListener('scroll', function() {
+            sections.forEach((section) => {
+                if(isPartiallyVisible(section)) {
+                    let id = section.id;
+                    menuListLink.forEach((link) => {
+                        link.classList.remove('menu-active');
+                        if ( link.getAttribute('href') == `#${id}`) {
+                            link.classList.add('menu-active');
+                        }
+                    })
+                }
+            })
+            heroHide();
+            menuContainer.style.opacity = '1';
+            logo.style.opacity = '1';
+            menuBlock.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'
+        })
+    } else {
+        window.addEventListener('scroll', function() {
+            scrollPalm();
+        })
+            
+        icon.addEventListener('click', function () {
+            if(this.classList.contains('is-active')){
+                closeMenuBtn(this);
             } else {
-                menuBlock.style.backgroundColor = 'rgba(24, 24, 24, 0.5)';
+                openMenuBtn(this);
             }
-            hideItems(hideBlock);
-            document.body.style.overflow = "visible";
-        } else {
-            this.classList.add('is-active');
-            if(palm.classList.contains('black')){
-                menuBlock.style.backgroundColor = 'rgba(255, 255, 255, 1)';
-            } else {
-                menuBlock.style.backgroundColor = 'rgba(24, 24, 24, 1)';
-            }
-            openMenu(showBlock);
-            document.body.style.overflow = "hidden";
-        }
-        
-    })
+        })
 
-    window.addEventListener('scroll', function() {
-        scrollPalm();
-    })
+        menuListLink.forEach((item) => {
+            item.addEventListener('click', function() {
+                closeMenuBtn(icon);
+            })
+        })
+    }
+
+    
+
+    function closeMenuBtn(btn) {
+        btn.classList.remove('is-active');
+        if(palm.classList.contains('black')){
+            menuBlock.style.backgroundColor = 'rgba(255, 255, 255, 0)';
+        } else {
+            menuBlock.style.backgroundColor = 'rgba(24, 24, 24, 0.5)';
+        }
+        hideItems(hideBlock);
+        document.body.style.overflow = "visible";
+    }
+
+    function openMenuBtn(btn) {
+        btn.classList.add('is-active');
+        if(palm.classList.contains('black')){
+            menuBlock.style.backgroundColor = 'rgba(255, 255, 255, 1)';
+        } else {
+            menuBlock.style.backgroundColor = 'rgba(24, 24, 24, 1)';
+        }
+        openMenu(showBlock);
+        document.body.style.overflow = "hidden";
+    }
 
     sections.forEach(function(section) {
         if(section.classList.contains('hero-section')){
@@ -62,6 +100,13 @@ window.addEventListener('load', function(){
 
 
 })
+
+function heroHide() {
+    heroSection.style.height = '0';
+    heroSection.style.padding = '0';
+}
+
+
 
 function scrollPalm() {
     let top = window.scrollY;
