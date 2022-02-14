@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 .header {
     padding: 0 3%;
@@ -213,12 +216,17 @@ section {
 }
 
 .about-svg-img {
+    display: block;
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: -40%;
     z-index: 0;
     width: 360px;
     height: 350px;
+}
+
+.about-svg-desktop {
+    display: none;
 }
 
 .orange-section {
@@ -272,12 +280,17 @@ section {
 }
 
 .create-svg {
+    display: block;
     position: absolute;
     top: 30px;
     right: -25%;
     z-index: 0;
     width: 280px;
     height: 300px;
+}
+
+.create-svg-desctop {
+    display: none;
 }
 
 .section-btn {
@@ -1545,6 +1558,10 @@ section {
         opacity: 1;
     }
 
+    section {
+        opacity: 1;
+    }
+
     .hero-section > .main-container {
         width: 933px;
     }
@@ -1559,9 +1576,15 @@ section {
         padding: 14vh 0 0 0;
     }
 
+    .about-section {
+        overflow: hidden;
+        position: relative;
+    }
+
     .numbers-section {
         margin-top: 14vh;
         padding-top: 14vh;
+        z-index: 10;
     }
 
     .create-section {
@@ -1619,6 +1642,21 @@ section {
 
     .section-text_white {
         color: var(--colorBlack);
+    }
+
+    .about-svg-desktop {
+        display: block;
+        position: absolute;
+        top: 8%;
+        right: -20%;
+        z-index: 100;
+        width: 818px;
+        height: 883px;
+        stroke: #888888;
+    }
+
+    .about-svg-img {
+        display: none;
     }
 
     .about-numbers-block {
@@ -1687,6 +1725,21 @@ section {
         animation: main-fire-7 3s alternate ease-in-out infinite;
     }
 
+    .create-svg-desktop {
+        display: block;
+        position: absolute;
+        top: 60%;
+        left: -13%;
+        z-index: 0;
+        width: 560px;
+        height: 550px;
+        stroke: #888888;
+    }
+
+    .create-svg {
+        display: none;
+    }
+
 
     @keyframes main-fire-4 {
         0% {
@@ -1743,7 +1796,7 @@ section {
     .header-container {
         height: 100px;
     }
-    
+
     .logo-link {
         display: flex;
         align-items: flex-start;
@@ -1803,8 +1856,11 @@ section {
         opacity: 0.5;
     }
 
-
     .menu-active {
+        opacity: 1;
+    }
+
+    section {
         opacity: 1;
     }
 
@@ -1822,9 +1878,15 @@ section {
         padding: 14vh 0 0 0;
     }
 
+    .about-section {
+        overflow: hidden;
+        position: relative;
+    }
+
     .numbers-section {
         margin-top: 14vh;
         padding-top: 14vh;
+        z-index: 10;
     }
 
     .create-section {
@@ -1882,6 +1944,21 @@ section {
 
     .section-text_white {
         color: var(--colorBlack);
+    }
+
+    .about-svg-desktop {
+        display: block;
+        position: absolute;
+        top: 8%;
+        right: -12%;
+        z-index: 100;
+        width: 818px;
+        height: 883px;
+        stroke: #888888;
+    }
+
+    .about-svg-img {
+        display: none;
     }
 
     .about-numbers-block {
@@ -1954,6 +2031,21 @@ section {
         font-size: 24px;
         line-height: 28px;
         margin-bottom: 20px;
+    }
+
+    .create-svg-desktop {
+        display: block;
+        position: absolute;
+        top: 60%;
+        left: -13%;
+        z-index: 0;
+        width: 760px;
+        height: 750px;
+        stroke: #888888;
+    }
+
+    .create-svg {
+        display: none;
     }
 
 

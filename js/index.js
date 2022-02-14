@@ -13,6 +13,8 @@ const menuLine = document.querySelectorAll('.line');
 const sections = document.querySelectorAll('section');
 const baloonSection = document.querySelector('.about-section');
 const baloon = document.querySelector('.about-svg-img');
+const baloonDesktopSection = document.querySelector('.create-section');
+const baloonDesktop = document.querySelector('.create-svg-desktop');
 
 const menuHeight = menuBlock.clientHeight;
 
@@ -36,7 +38,10 @@ window.addEventListener('load', function(){
             heroHide();
             menuContainer.style.opacity = '1';
             logo.style.opacity = '1';
-            menuBlock.style.backgroundColor = 'rgba(255, 255, 255, 0.8)'
+            menuBlock.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+            if(isJustVisible(baloonDesktopSection)){
+                showBaloon(baloonDesktopSection);
+            }
         })
     } else {
         window.addEventListener('scroll', function() {
@@ -48,6 +53,22 @@ window.addEventListener('load', function(){
                 closeMenuBtn(this);
             } else {
                 openMenuBtn(this);
+            }
+        })
+
+        sections.forEach(function(section) {
+            if(section.classList.contains('hero-section')){
+                section.style.opacity = '1';
+            } else {
+                window.addEventListener('scroll', function () {
+                    if(isPartiallyVisible(section)){
+                        section.style.opacity = '1';
+                        if(isJustVisible(baloonSection)){
+                            showBaloon(baloonSection);
+                        }
+                    }
+                    
+                })
             }
         })
 
@@ -81,22 +102,6 @@ window.addEventListener('load', function(){
         openMenu(showBlock);
         document.body.style.overflow = "hidden";
     }
-
-    sections.forEach(function(section) {
-        if(section.classList.contains('hero-section')){
-            section.style.opacity = '1';
-        } else {
-            window.addEventListener('scroll', function () {
-                if(isPartiallyVisible(section)){
-                    section.style.opacity = '1';
-                    if(isJustVisible(baloonSection)){
-                        showBaloon(baloonSection);
-                    }
-                }
-                
-            })
-        }
-    })
 
 
 })
@@ -196,7 +201,12 @@ function isFullyVisible(el) {
 function showBaloon (section) {
     let elementBoundary = section.getBoundingClientRect();
     let top = elementBoundary.top;
-    let height = elementBoundary.height/2;
+    let height = elementBoundary.height/3;
     let yPos = top - height;
-    baloon.style.top = yPos + 'px';
+    if(section.classList.contains('create-section')){
+        baloonDesktop.style.top = yPos + 'px';
+    } else {
+        baloon.style.top = yPos + 'px';
+    }
+    
 }
