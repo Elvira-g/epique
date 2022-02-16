@@ -450,7 +450,13 @@ section {
     border-radius: 16px;
     color: rgba(24, 24, 24, 0.5);
     padding-left: 10px;
+    padding-top: 5px;
     box-sizing:border-box;
+}
+
+.section-textarea:focus, .section-textarea:active {
+    border: none;
+    outline: none;
 }
 
 .section-text-small {
@@ -1756,11 +1762,11 @@ section {
 
     .section-btn:hover .section-btn-text, .section-btn:hover .section-btn-text-white, .section-btn:hover .btn-img, .section-btn:hover .btn-img-white {
         color: #616161;
-        stroke: #616161;
+        stroke: #26BFDC;
     }
 
     .section-btn:hover .section-btn-icon, .section-btn:hover .section-btn-icon-white {
-        fill: #616161;
+        fill: #26BFDC;
         width: 185px;
         height: 23px;
     }
@@ -2118,11 +2124,11 @@ section {
 
     .section-btn:hover .section-btn-text, .section-btn:hover .section-btn-text-white, .section-btn:hover .btn-img, .section-btn:hover .btn-img-white {
         color: #616161;
-        stroke: #616161;
+        stroke: #26BFDC;
     }
 
     .section-btn:hover .section-btn-icon, .section-btn:hover .section-btn-icon-white {
-        fill: #616161;
+        fill: #26BFDC;
         width: 185px;
         height: 23px;
     }
