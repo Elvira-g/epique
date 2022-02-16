@@ -212,7 +212,7 @@ function showBaloon (section) {
     let elementBoundary = section.getBoundingClientRect();
     let top = elementBoundary.top;
     let height = elementBoundary.height/3;
-    let yPos = top - height;
+    let yPos = top - (height - 400);
     if(section.classList.contains('create-section')){
         baloonDesktop.style.top = yPos + 'px';
     } else {

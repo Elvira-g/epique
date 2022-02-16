@@ -1835,6 +1835,44 @@ section {
         height: 400px;
     }
 
+    .lighter-fire-1,
+    .lighter-fire-2,
+    .lighter-fire-3,
+    .lighter-fire-4,
+    .lighter-fire-5,
+    .lighter-fire-6,
+    .lighter-fire-7 {
+        opacity: 0.15;
+    }
+
+    .lighter-fire-1 {
+        animation: lighter-fire 0.8s alternate ease-in-out infinite;
+    }
+
+    .lighter-fire-2 {
+        animation: lighter-fire 1.3s alternate ease-in-out infinite;
+    }
+
+    .lighter-fire-3 {
+        animation: lighter-fire 1.8s alternate ease-in-out infinite;
+    }
+
+    .lighter-fire-4 {
+        animation: lighter-fire 2.3s alternate ease-in-out infinite;
+    }
+
+    .lighter-fire-5 {
+        animation: lighter-fire 2.8s alternate ease-in-out infinite;
+    }
+
+    .lighter-fire-6 {
+        animation: lighter-fire 3.3s alternate ease-in-out infinite;
+    }
+
+    .lighter-fire-7 {
+        animation: lighter-fire 3.8s alternate ease-in-out infinite;
+    }
+
     .section-form {
         justify-content: space-between;
     }
@@ -1898,6 +1936,17 @@ section {
         100% {
             width: 155px;
             height: 245px;
+        }
+    }
+
+
+    @keyframes lighter-fire {
+        0% {
+            opacity: 0.04;
+        }
+    
+        100% {
+            opacity: 0.15;
         }
     }
 }
@@ -2204,6 +2253,44 @@ section {
         height: 530px;
     }
 
+    .lighter-fire-1,
+    .lighter-fire-2,
+    .lighter-fire-3,
+    .lighter-fire-4,
+    .lighter-fire-5,
+    .lighter-fire-6,
+    .lighter-fire-7 {
+        opacity: 0.15;
+    }
+
+    .lighter-fire-1 {
+        animation: lighter-fire 0.8s alternate ease-in-out infinite;
+    }
+
+    .lighter-fire-2 {
+        animation: lighter-fire 1.3s alternate ease-in-out infinite;
+    }
+
+    .lighter-fire-3 {
+        animation: lighter-fire 1.8s alternate ease-in-out infinite;
+    }
+
+    .lighter-fire-4 {
+        animation: lighter-fire 2.3s alternate ease-in-out infinite;
+    }
+
+    .lighter-fire-5 {
+        animation: lighter-fire 2.8s alternate ease-in-out infinite;
+    }
+
+    .lighter-fire-6 {
+        animation: lighter-fire 3.3s alternate ease-in-out infinite;
+    }
+
+    .lighter-fire-7 {
+        animation: lighter-fire 3.8s alternate ease-in-out infinite;
+    }
+
     .section-form {
         justify-content: space-between;
     }
@@ -2268,6 +2355,16 @@ section {
         100% {
             width: 155px;
             height: 245px;
+        }
+    }
+
+    @keyframes lighter-fire {
+        0% {
+            opacity: 0.04;
+        }
+    
+        100% {
+            opacity: 0.15;
         }
     }
 
