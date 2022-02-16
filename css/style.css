@@ -658,42 +658,42 @@ section {
 
 
     .main-fire-item:nth-child(1) {
-        width: 54px; 
-        height: 70px;
+        width: 33px; 
+        height: 51px;
         animation: main-fire-1 1.2s alternate ease-in-out infinite;
     }
     
     .main-fire-item:nth-child(2) {
-        width: 76px;
-        height: 98px;
+        width: 60px;
+        height: 87px;
     }
     
     .main-fire-item:nth-child(3) {
-        width: 88px;
-        height: 131px;
+        width: 76px;
+        height: 128px;
     }
     
     .main-fire-item:nth-child(4) {
-        width: 101px;
+        width: 93px;
         height: 141px;
         animation: main-fire-4 3s alternate ease-in-out infinite;
     }
     
     .main-fire-item:nth-child(5) {
-        width: 116px;
-        height: 160px;
+        width: 112px;
+        height: 165px;
         animation: main-fire-5 1.8s alternate ease-in-out infinite;
     }
     
     .main-fire-item:nth-child(6) {
         width: 127px;
-        height: 180px;
+        height: 189px;
         animation: main-fire-6 2s alternate ease-in-out infinite;
     }
     
     .main-fire-item:nth-child(7) {
-        width: 138px;
-        height: 208px;
+        width: 140px;
+        height: 224px;
         animation: main-fire-7 3s alternate ease-in-out infinite;
     }
 
@@ -790,51 +790,49 @@ section {
 
     @keyframes main-fire-4 {
         0% {
-            width: 101px;
+            width: 93px;
             height: 141px;
         }
     
         100% {
-            width: 120px;
-            height: 150px;
+            width: 113px;
+            height: 151px;
         }
     }
     
     @keyframes main-fire-5 {
         0% {
-            width: 116px;
-            height: 160px;
+            width: 112px;
+            height: 165px;
         }
     
         100% {
-            width: 135px;
-            height: 175px;
+            width: 125px;
+            height: 185px;
         }
     }
     
     @keyframes main-fire-6 {
         0% {
             width: 127px;
-            height: 180px;
+            height: 189px;
         }
     
         100% {
             width: 140px;
-            height: 205px;
-    
+            height: 199px;
         }
     }
     
     @keyframes main-fire-7 {
         0% {
-            width: 138px;
-            height: 208px;
+            width: 140px;
+            height: 224px;
         }
     
         100% {
-            width: 160px;
-            height: 225px;
-    
+            width: 155px;
+            height: 245px;
         }
     }
 }
@@ -908,42 +906,42 @@ section {
     }
 
     .main-fire-item:nth-child(1) {
-        width: 74px; 
-        height: 90px;
+        width: 33px; 
+        height: 51px;
         animation: main-fire-1 1.2s alternate ease-in-out infinite;
     }
     
     .main-fire-item:nth-child(2) {
-        width: 96px;
-        height: 118px;
+        width: 60px;
+        height: 87px;
     }
     
     .main-fire-item:nth-child(3) {
-        width: 108px;
-        height: 151px;
+        width: 76px;
+        height: 128px;
     }
     
     .main-fire-item:nth-child(4) {
-        width: 121px;
-        height: 161px;
+        width: 93px;
+        height: 141px;
         animation: main-fire-4 3s alternate ease-in-out infinite;
     }
     
     .main-fire-item:nth-child(5) {
-        width: 136px;
-        height: 180px;
+        width: 112px;
+        height: 165px;
         animation: main-fire-5 1.8s alternate ease-in-out infinite;
     }
     
     .main-fire-item:nth-child(6) {
-        width: 147px;
-        height: 200px;
+        width: 127px;
+        height: 189px;
         animation: main-fire-6 2s alternate ease-in-out infinite;
     }
     
     .main-fire-item:nth-child(7) {
-        width: 158px;
-        height: 228px;
+        width: 140px;
+        height: 224px;
         animation: main-fire-7 3s alternate ease-in-out infinite;
     }
 
@@ -1038,51 +1036,49 @@ section {
 
     @keyframes main-fire-4 {
         0% {
-            width: 121px;
-            height: 161px;
+            width: 93px;
+            height: 141px;
         }
     
         100% {
-            width: 140px;
-            height: 170px;
+            width: 113px;
+            height: 151px;
         }
     }
     
     @keyframes main-fire-5 {
         0% {
-            width: 136px;
-            height: 180px;
+            width: 112px;
+            height: 165px;
         }
     
         100% {
-            width: 155px;
-            height: 195px;
+            width: 125px;
+            height: 185px;
         }
     }
     
     @keyframes main-fire-6 {
         0% {
-            width: 147px;
-            height: 200px;
+            width: 127px;
+            height: 189px;
         }
     
         100% {
-            width: 160px;
-            height: 225px;
-    
+            width: 140px;
+            height: 199px;
         }
     }
     
     @keyframes main-fire-7 {
         0% {
-            width: 158px;
-            height: 228px;
+            width: 140px;
+            height: 224px;
         }
     
         100% {
-            width: 180px;
+            width: 155px;
             height: 245px;
-    
         }
     }
 }
