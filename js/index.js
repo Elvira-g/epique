@@ -37,6 +37,7 @@ window.addEventListener('load', function(){
                 }
             })
             heroHide();
+            menuBlock.style.display = 'block';
             menuContainer.style.opacity = '1';
             logo.style.opacity = '1';
             menuBlock.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
