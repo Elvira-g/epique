@@ -15,6 +15,7 @@ const baloonSection = document.querySelector('.about-section');
 const baloon = document.querySelector('.about-svg-img');
 const baloonDesktopSection = document.querySelector('.create-section');
 const baloonDesktop = document.querySelector('.create-svg-desktop');
+const checkboxLabel = document.querySelectorAll('.checkbox-label');
 
 const menuHeight = menuBlock.clientHeight;
 
@@ -78,6 +79,14 @@ window.addEventListener('load', function(){
             })
         })
     }
+
+    checkboxLabel.forEach((item) => {
+        item.addEventListener('click',(e)=>{
+            e.preventDefault();
+           item.classList.toggle('checkbox-label-active'); 
+        })
+        
+    })
 
     
 

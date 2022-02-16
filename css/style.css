@@ -293,14 +293,33 @@ section {
     display: none;
 }
 
+.promote-svg-desktop {
+    display: none;
+}
+
 .section-btn {
     margin-top: 4vh;
+    cursor: pointer;
+}
+
+.btn-img {
+    width: 50%;
+    margin-bottom: 10px;
+    stroke: var(--colorBlack);
+}
+
+.btn-img-white {
+    width: 50%;
+    margin-bottom: 10px;
+    stroke: #ffffff;
 }
 
 .section-btn-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;  
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .section-btn-icon {
@@ -348,13 +367,18 @@ section {
     position: relative;
     width: 45%;
     height: 28px;
-    border: none;
+    border: 2px solid rgb(182, 182, 182);
     background: rgba(24, 24, 24, 0.3);
     color: rgba(24, 24, 24, 0.5);
     border-radius: 14px;
     text-align: center;
     box-sizing: border-box;
+    cursor: pointer;
 }
+
+/* .checkbox-label:hover {
+    background: rgba(182, 182, 182, 0.5);
+} */
 
 .checkbox-input {
     position: absolute;
@@ -364,6 +388,7 @@ section {
 
 .checkbox-label-active {
     background: rgba(38, 191, 220, 0.4);
+    border: 2px solid rgb(182, 182, 182);
     color: #ffffff;
 }
 
@@ -429,10 +454,6 @@ section {
     justify-content: center;
     flex-wrap: wrap;
     color: var(--colorBlack);
-}
-
-.section-btn-text {
-    width: 100%;
 }
 
 
@@ -1518,6 +1539,7 @@ section {
         height: auto;
         left: 0;
         z-index: 990;
+        opacity: 0;
         transition: 0.3s;
     }
 
@@ -1552,7 +1574,6 @@ section {
         color: var(--colorBlack);
         opacity: 0.5;
     }
-
 
     .menu-active {
         opacity: 1;
@@ -1592,6 +1613,7 @@ section {
     }
 
     .promote-section {
+        overflow: hidden;
         padding-bottom: 14vh;
     }
 
@@ -1648,9 +1670,9 @@ section {
         display: block;
         position: absolute;
         top: 8%;
-        right: -20%;
+        right: 0;
         z-index: 100;
-        width: 818px;
+        width: 618px;
         height: 883px;
         stroke: #888888;
     }
@@ -1675,6 +1697,10 @@ section {
 
     .section-btn {
         margin-top: 80px;
+    }
+
+    .btn-img-white {
+        stroke: var(--colorBlack);
     }
 
     .section-btn-icon {
@@ -1729,15 +1755,41 @@ section {
         display: block;
         position: absolute;
         top: 60%;
-        left: -13%;
+        left: -5%;
         z-index: 0;
-        width: 560px;
+        width: 460px;
         height: 550px;
-        stroke: #888888;
     }
 
     .create-svg {
         display: none;
+    }
+
+    .promote-svg-desktop {
+        display: block;
+        position: absolute;
+        top: 10%;
+        right: -5%;
+        z-index: 0;
+        width: 400px;
+        height: 400px;
+    }
+
+    .section-form {
+        justify-content: space-between;
+    }
+
+    .form-input {
+        width: 47%;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .checkbox-label {
+        height: 40px;
+        width: 47%;
+        line-height: 38px;
+        border-radius: 20px;
     }
 
 
@@ -1821,6 +1873,7 @@ section {
         height: auto;
         left: 0;
         z-index: 990;
+        opacity: 0;
         transition: 0.3s;
     }
 
@@ -1894,6 +1947,7 @@ section {
     }
 
     .promote-section {
+        overflow: hidden;
         padding-bottom: 14vh;
     }
 
@@ -1949,10 +2003,10 @@ section {
     .about-svg-desktop {
         display: block;
         position: absolute;
-        top: 8%;
-        right: -12%;
+        top: 10%;
+        right: -4%;
         z-index: 100;
-        width: 818px;
+        width: 718px;
         height: 883px;
         stroke: #888888;
     }
@@ -1977,6 +2031,10 @@ section {
 
     .section-btn {
         margin-top: 80px;
+    }
+
+    .btn-img-white {
+        stroke: var(--colorBlack);
     }
 
     .section-btn-icon {
@@ -2047,6 +2105,34 @@ section {
     .create-svg {
         display: none;
     }
+
+    .promote-svg-desktop {
+        display: block;
+        position: absolute;
+        top: 10%;
+        right: -2%;
+        z-index: 0;
+        width: 530px;
+        height: 530px;
+    }
+
+    .section-form {
+        justify-content: space-between;
+    }
+
+    .form-input {
+        width: 47%;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .checkbox-label {
+        height: 40px;
+        width: 47%;
+        line-height: 38px;
+        border-radius: 20px;
+    }
+
 
 
     @keyframes main-fire-4 {
